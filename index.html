@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Data for Better Lives – Proposal</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <style>
+    :root {
+      --blue: #003399;
+      --light-bg: #f5f7fb;
+      --text: #222222;
+    }
+    * {
+      box-sizing: border-box;
+    }
+    body {
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      margin: 0;
+      background: var(--light-bg);
+      color: var(--text);
+      line-height: 1.6;
+    }
+    header {
+      background: var(--blue);
+      color: white;
+      padding: 2.5rem 1.5rem 2rem 1.5rem;
+      text-align: center;
+    }
+    header h1 {
+      margin: 0 0 0.25rem 0;
+      font-size: 2.1rem;
+    }
+    header p {
+      margin: 0.25rem 0;
+      font-size: 1rem;
+      opacity: 0.95;
+    }
+    .lang-toggle {
+      margin-top: 1rem;
+      display: inline-flex;
+      gap: 0.5rem;
+      background: rgba(255,255,255,0.12);
+      padding: 0.25rem;
+      border-radius: 999px;
+    }
+    .lang-toggle button {
+      border: none;
+      background: transparent;
+      color: #ffffff;
+      font-size: 0.9rem;
+      padding: 0.25rem 0.8rem;
+      border-radius: 999px;
+      cursor: pointer;
+    }
+    .lang-toggle button.active {
+      background: #ffffff;
+      color: var(--blue);
+      font-weight: 600;
+    }
+    main {
+      max-width: 960px;
+      margin: 2rem auto 3rem auto;
+      padding: 0 1.5rem;
+    }
+    .card {
+      background: #ffffff;
+      box-shadow: 0 4px 14px rgba(0,0,0,0.06);
+      border-radius: 10px;
+      padding: 1.75rem 1.75rem 1.5rem 1.75rem;
+      margin-bottom: 1.5rem;
+    }
+    h2 {
+      color: var(--blue);
+      margin-top: 0;
+      margin-bottom: 0.75rem;
+      font-size: 1.4rem;
+    }
+    ul {
+      padding-left: 1.2rem;
+    }
+    .infographic {
+      text-align: center;
+      margin: 1rem 0 0.5rem 0;
+    }
+    .infographic img {
+      max-width: 100%;
+      border-radius: 6px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+    }
+    .small {
+      font-size: 0.9rem;
+      color: #555555;
+    }
+    footer {
+      text-align: center;
+      padding: 1.5rem;
+      font-size: 0.85rem;
+      color: #555555;
+    }
+    a {
+      color: var(--blue);
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Data for Better Lives – Proposal</h1>
+    <p data-lang="en">
+      Strengthening data literacy and leadership in the public sector – inspired by WDR 2021.
+    </p>
+    <p data-lang="es">
+      Fortalecer la alfabetización y el liderazgo en datos en el sector público – inspirado en el WDR 2021.
+    </p>
+
+    <div class="lang-toggle">
+      <button id="btn-en" class="active">EN</button>
+      <button id="btn-es">ES</button>
+    </div>
+  </header>
+
+  <main>
+    <!-- About / Context -->
+    <section class="card">
+      <h2 data-lang="en">About this project</h2>
+      <h2 data-lang="es">Sobre este proyecto</h2>
+
+      <p data-lang="en">
+        This website is a personal, academic proposal that builds on a memo titled
+        <em>“Strengthening Data Literacy Across Senior Public Sector Leadership”</em>.
+        It is inspired by the <strong>World Development Report 2021: Data for Better Lives</strong>
+        and aims to illustrate how a country could promote a stronger culture of data in its public institutions.
+        It does not represent any official government position.
+      </p>
+      <p data-lang="es">
+        Esta página es una propuesta personal y académica basada en un memo titulado
+        <em>«Fortalecer la alfabetización en datos del liderazgo del sector público»</em>.
+        Se inspira en el <strong>Informe sobre el Desarrollo Mundial 2021: Datos para mejorar vidas</strong>
+        y busca ilustrar cómo un país podría promover una cultura de datos más sólida en sus instituciones públicas.
+        No representa la posición oficial de ningún gobierno.
+      </p>
+
+      <!-- Optional: link to the memo PDF if you add it to the repo -->
+      <p class="small" data-lang="en">
+        If you wish, you can link the full memo here once you upload it, e.g.:
+        <br>
+        <a href="memo-data-leadership.pdf" target="_blank">Download the full memo (PDF)</a>
+      </p>
+      <p class="small" data-lang="es">
+        Si lo deseas, puedes enlazar aquí el memo completo una vez lo subas, por ejemplo:
+        <br>
+        <a href="memo-data-leadership.pdf" target="_blank">Descargar el memo completo (PDF)</a>
+      </p>
+    </section>
+
+    <!-- How data is changing the landscape -->
+    <section class="card">
+      <h2 data-lang="en">How data is changing the development landscape</h2>
+      <h2 data-lang="es">Cómo los datos están cambiando el desarrollo</h2>
+
+      <p data-lang="en">
+        Around the world, data is reshaping how governments design policies, target social programs,
+        manage crises and plan public investment. Public intent data (such as surveys, administrative
+        records and official statistics) and private intent data (from telecoms, platforms and financial
+        services) can be combined to deliver more timely, granular and relevant insights for decision-makers.
+      </p>
+      <p data-lang="es">
+        En todo el mundo, los datos están transformando la forma en que los gobiernos diseñan políticas,
+        orientan programas sociales, gestionan crisis y planifican la inversión pública. Los datos de intención
+        pública (encuestas, registros administrativos, estadísticas oficiales) y los datos de intención privada
+        (de telecomunicaciones, plataformas y servicios financieros) pueden combinarse para ofrecer información
+        más oportuna, granular y relevante para la toma de decisiones.
+      </p>
+
+      <p data-lang="en">
+        However, these benefits only materialize when senior leadership understands what data exists,
+        how reliable it is, and how to use it responsibly. Without that, even the best datasets remain
+        underused, and policy decisions continue to rely on intuition or outdated information.
+      </p>
+      <p data-lang="es">
+        Sin embargo, estos beneficios sólo se materializan cuando el liderazgo de alto nivel entiende qué datos
+        existen, cuán fiables son y cómo utilizarlos de forma responsable. De lo contrario, incluso los mejores
+        conjuntos de datos quedan infrautilizados y las decisiones de política siguen basándose en la intuición
+        o en información desactualizada.
+      </p>
+    </section>
+
+    <!-- Infographic (if you want to reuse it) -->
+    <section class="card">
+      <h2 data-lang="en">Visual summary: Data for Better Lives</h2>
+      <h2 data-lang="es">Resumen visual: Datos para mejorar vidas</h2>
+
+      <p data-lang="en">
+        The infographic below offers a simple visual summary of why data matters for development and how
+        a National Data Leadership Program could help build a stronger data culture in government.
+      </p>
+      <p data-lang="es">
+        La infografía siguiente ofrece un resumen visual sencillo sobre por qué los datos importan para
+        el desarrollo y cómo un Programa Nacional de Liderazgo en Datos podría ayudar a construir una
+        cultura de datos más sólida en el sector público.
+      </p>
+
+      <div class="infographic">
+        <!-- Replace infographic.png with your real filename or URL -->
+        <img src="infographic.png" alt="Data for Better Lives infographic">
+      </div>
+    </section>
+
+    <!-- Core idea / solution -->
+    <section class="card">
+      <h2 data-lang="en">Core proposal: National Data Leadership Program</h2>
+      <h2 data-lang="es">Propuesta central: Programa Nacional de Liderazgo en Datos</h2>
+
+      <p data-lang="en">
+        The memo and this digital artifact propose the creation of a <strong>National Data Leadership Program (NDLP)</strong>,
+        designed to strengthen data literacy and strategic use of data across all senior levels of government.
+      </p>
+      <p data-lang="es">
+        El memo y este artefacto digital proponen la creación de un <strong>Programa Nacional de Liderazgo en Datos (PNLD)</strong>,
+        destinado a reforzar la alfabetización en datos y su uso estratégico en todos los niveles superiores del gobierno.
+      </p>
+
+      <ul data-lang="en">
+        <li><strong>Leadership training:</strong> modular, high-level training on data governance, public vs. private intent data, and ethical use.</li>
+        <li><strong>Government Data Council:</strong> a senior body to coordinate data reforms and encourage cross-ministerial collaboration.</li>
+        <li><strong>Mandatory data briefings:</strong> key policies and investments must include a data-driven justification.</li>
+        <li><strong>Enabling environment:</strong> improved infrastructure, clear data-sharing rules, and strong privacy/cybersecurity frameworks.</li>
+        <li><strong>Partnerships:</strong> collaboration with universities and private-sector data holders to build capacity and test real use cases.</li>
+      </ul>
+
+      <ul data-lang="es">
+        <li><strong>Formación del liderazgo:</strong> capacitación modular de alto nivel sobre gobernanza de datos, datos de intención pública y privada, y uso ético.</li>
+        <li><strong>Consejo de Datos del Gobierno:</strong> órgano de alto nivel para coordinar reformas de datos y fomentar la colaboración interministerial.</li>
+        <li><strong>Informes de datos obligatorios:</strong> las políticas e inversiones clave deben incluir una justificación basada en datos.</li>
+        <li><strong>Entorno habilitante:</strong> mejor infraestructura, reglas claras de intercambio de datos y marcos sólidos de privacidad y ciberseguridad.</li>
+        <li><strong>Alianzas:</strong> colaboración con universidades y sector privado para desarrollar capacidades y probar casos de uso reales.</li>
+      </ul>
+    </section>
+
+    <!-- WDR 2021 link / further reading -->
+    <section class="card">
+      <h2 data-lang="en">Further reading: World Development Report 2021</h2>
+      <h2 data-lang="es">Para saber más: Informe sobre el Desarrollo Mundial 2021</h2>
+
+      <p data-lang="en">
+        This proposal is inspired by the
+        <strong>World Development Report 2021: Data for Better Lives</strong>, which explores how countries can
+        harness data for development while protecting people from harm. You can read the report and explore
+        its data stories here:
+      </p>
+      <p data-lang="es">
+        Esta propuesta se inspira en el
+        <strong>Informe sobre el Desarrollo Mundial 2021: Datos para mejorar vidas</strong>, que analiza cómo los países
+        pueden aprovechar los datos para el desarrollo protegiendo al mismo tiempo a las personas frente a posibles daños.
+        Puedes consultar el informe y sus historias de datos aquí:
+      </p>
+
+      <p>
+        <a href="https://www.worldbank.org/en/publication/wdr2021" target="_blank">
+          World Development Report 2021: Data for Better Lives
+        </a>
+        <br>
+        <a href="https://wdr2021.worldbank.org/" target="_blank">
+          WDR 2021 interactive website
+        </a>
+      </p>
+    </section>
+  </main>
+
+  <footer>
+    <span data-lang="en">
+      Personal academic project inspired by WDR 2021 – not an official position of any government or institution.
+    </span>
+    <span data-lang="es">
+      Proyecto académico personal inspirado en el WDR 2021 – no representa la posición oficial de ningún gobierno ni institución.
+    </span>
+  </footer>
+
+  <script>
+    // Simple language toggle
+    const btnEn = document.getElementById('btn-en');
+    const btnEs = document.getElementById('btn-es');
+
+    function setLanguage(lang) {
+      document.querySelectorAll('[data-lang]').forEach(el => {
+        if (el.getAttribute('data-lang') === lang) {
+          el.style.display = '';
+        } else {
+          el.style.display = 'none';
+        }
+      });
+      if (lang === 'en') {
+        btnEn.classList.add('active');
+        btnEs.classList.remove('active');
+      } else {
+        btnEs.classList.add('active');
+        btnEn.classList.remove('active');
+      }
+    }
+
+    btnEn.addEventListener('click', () => setLanguage('en'));
+    btnEs.addEventListener('click', () => setLanguage('es'));
+
+    // default language
+    setLanguage('en');
+  </script>
+</body>
+</html>
